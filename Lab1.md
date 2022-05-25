@@ -1,11 +1,11 @@
 # 1. . Створити змінні базових (atomic) типів. Базові типи: character, numeric,  integer, complex, logical:
 ---
 ```{r}
-s <- "KNUCA"
-x <- 2L
-y <- 2.0
-a <- 1 + 4i
-b <- FALSE
+s <- "Sasha"
+x <- 7L
+y <- 3.0
+a <- 2 + 5i
+b <- TRUE
 ```
 # 2. Створити вектори, які: містить послідовність з 5 до 75; містить числа 3.14, 2.71, 0, 13; 100 значень TRUE
 ---
@@ -71,14 +71,14 @@ Pезультат: [1] 3
 # 7. Створити довільний data frame та вивести в консоль.:
 ---
 ```{r}
-name <- c("Ihor","Mykola","Nazar","Maksym","Anatoliy")
-age <- c(22,32,24,54,20)
-city <- c("Kyiv","Kharkiv","Lviv","Odesa","Dnipro")
-peoples <- data.frame(Name = name, Age = age, City = city)
-print(peoples)
+fruits <- c("peach","melon","apple","strawberries","lemon")
+price <- c(20,50,60,17,27)
+weight <- c("1","2","3","4","5")
+information <- data.frame(Fruits = fruits, Price = price, Weight = weight)
+print(information)
 ```
 # 8. Змінити імена стовпців цього data frame.:
 ---
 ```{r}
-names(peoples) <- c('FirstName', 'Years', 'PlaceofBi')
-print(peoples)
+names(information) <- c('Fruitname', 'Cost', 'Heft')
+print(information)
